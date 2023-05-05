@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudoku</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="resources/css/style.css">
+</head>
+<body>
+  <div class="container-page">
+    <div class="container-row container-title-bar">
+      <h2 class="game-title">Sudoku</h2>
+    </div>
+
+    <div class="container-toolbar">
+      <div class="container-row">
+        <div class="flex-toolbar-content">
+          <!-- TODO: Implement logic for making easy, medium, hard puzzles-->
+          <!-- <div id="toolbar-left">
+            <button class="btn toolbar-button toolbar-button-selected" id="easy-button" onclick="switchtoEasy()">
+              Easy
+            </button>
+            <button class="btn toolbar-button" id="medium-button" onclick="switchtoMedium()">
+              Medium
+            </button>
+            <button class="btn toolbar-button" id="hard-button" onclick="switchtoHard()">
+              Hard
+            </button>
+          </div> -->
+
+          <!-- TODO: Replace with a timer -->
+          <div id="toolbar-center">
+            <p class="difficulty" id="difficulty"></p>
+          </div>
+
+          <div id="toolbar-right">
+            <button class="btn toolbar-button" id="new-game-button" onclick="createNewGame()">
+              New Game
+            </button>
+            <button class="btn toolbar-button" id="reset-button" onclick="resetPuzzle()">
+              Reset
+            </button>
+            <button class="btn toolbar-button" id="reveal-button" onclick="revealPuzzle()">
+              Reveal
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="flex-game-field">
+      <div id="sudoku-board">
+        <table id="sudoku-table" class="sudoku-table">
+        </table>
+      </div>
+
+      <div class="number-pad" id="number-pad">
+      </div>
+    </div>
+
+    <script src="resources/js/Solver.js"></script>
+    <script src="resources/js/Puzzle.js"></script>
+    <script src="resources/js/script.js"></script>
+  </div>
+</body>
+</html>
